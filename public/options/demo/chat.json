@@ -1,106 +1,86 @@
 [
-    { "msgs": ["普通消息，有输入动画"], "msgInputSpeed": 80 },
-    { "msgs": ["普通消息支持回退，比如下面这条"], "msgInputSpeed": 80 },
+    { "msgs": ["好想我的傻老婆，她在干什么呀？"], "msgInputSpeed": 80 },
     {
-        "msgs": ["普通消息会回退", "普通消息回退后的结果，也能调整动画速度"],
-        "msgInputSpeed": 80
-    },
-    { "msgs": ["普通消息输入快速"], "msgInputSpeed": 40 },
-    {
-        "msgs": ["支持切换输入角色"],
-        "msgInputSpeed": 80,
-        "author": "me"
-    },
-    {
-        "msgs": ["消息支持html元素，比如下面这个带颜色的文本"],
-        "msgInputSpeed": 80
-    },
-    {
-        "msgs": ["<span style=\"color: red;\">红色的span标签字体</span>"],
-        "msgInputSpeed": 80
-    },
-    {
-        "msgs": [
-            "消息支持触发用户输入交互，本条消息用户输入包括[好]才能进入下一步，多次将强行跳过"
-        ],
+        "msgs": ["老婆今天是什么日子知道吗，要回答的哦"],
         "msgInputSpeed": 80,
         "triggerNextAction": {
             "type": "userInput",
             "options": {
-                "resolveKeyTexts": ["好"],
+                "resolveKeyTexts": ["情人节", "情人", "纪念日"],
                 "rejectKeyTexts": [],
-                "rejectHitTexts": ["输入好，听不懂吗？？？", "触发强行跳过"]
+                "rejectHitTexts": [
+                    "傻老婆，还是笨笨的呀"
+                ]
             }
         }
     },
-    { "msgs": ["消息支持输入图片"], "msgInputSpeed": 80 },
-    { "msgs": ["<img src='options/demo/imgs/test.png'/>"] },
-    { "msgs": ["消息支持输入VLog"], "msgInputSpeed": 80 },
-    { "msgs": ["看看我为你做的VLog"], "msgInputSpeed": 80 },
     {
-        "msgs": ["<vlog src='options/demo/vlogs/test.mp4'/>"],
-        "triggerNextAction": { "type": "componentClose" }
-    },
-    { "msgs": ["消息支持输入信件"], "msgInputSpeed": 80 },
-    { "msgs": ["看看我想对你说的话"], "msgInputSpeed": 80 },
-    {
-        "msgs": ["<letter src='options/demo/letters/test.json'/>"],
-        "triggerNextAction": { "type": "componentClose" }
-    },
-    { "msgs": ["接下来是一些通用测试"], "msgInputSpeed": 80 },
-    {
-        "msgs": ["有些心里话，你想听吗？"],
-        "msgInputSpeed": 40,
+        "msgs": ["知道我现在在想什么吗？"],
+        "msgInputSpeed": 80,
         "triggerNextAction": {
             "type": "userInput",
             "options": {
-                "resolveKeyTexts": [
-                    "好的",
-                    "可以",
-                    "同意",
-                    "愿意",
-                    "想",
-                    "想听",
-                    "是"
-                ],
+                "resolveKeyTexts": ["我","想我", "想女朋友"],
                 "rejectKeyTexts": ["不想"],
                 "rejectHitTexts": [
-                    "不听？信不信我分分钟出 bug 给你看？",
-                    "好吧，既然你实在不想听，那我就讲给你听吧～"
+                    "可以照照镜子呀"
                 ]
             }
         }
     },
-    { "msgs": ["心里话都在这封信里"], "msgInputSpeed": 80 },
     {
-        "msgs": ["<letter src='options/demo/letters/test.json'/>"],
-        "triggerNextAction": { "type": "componentClose" }
+        "msgs": ["我现在当然是在想打游戏", "我现在当然是在想你啦～"],
+        "msgInputSpeed": 80
     },
+
+    { "msgs": ["傻老婆"], "msgInputSpeed": 100 },
+    { "msgs": ["这些天经常惹你生气"], "msgInputSpeed": 140 },
+    { "msgs": ["是我不对，最近事情太多，我太急躁了"], "msgInputSpeed": 130 },
+    { "msgs": ["以后肯定不会这样了"], "msgInputSpeed": 130 },
+    { "msgs": ["再这样允许你把我胡子毛毛拔了😭"], "msgInputSpeed": 130 },
+    { "msgs": ["我错了，老婆，以后不会了"], "msgInputSpeed": 180 },
+    { "msgs": ["我错了，老婆，以后不会了"], "msgInputSpeed": 180 },
+    { "msgs": ["我错了，老婆，以后不会了"], "msgInputSpeed": 180 },
     {
-        "msgs": ["你猜我在想什么？"],
+        "msgs": ["傻老婆原谅我好不好？"],
         "msgInputSpeed": 80,
         "triggerNextAction": {
             "type": "userInput",
             "options": {
-                "resolveKeyTexts": ["想我"],
-                "rejectKeyTexts": ["不知道"],
+                "resolveKeyTexts": ["好","原谅"],
+                "rejectKeyTexts": ["不"],
                 "rejectHitTexts": [
-                    "你猜错了～",
-                    ["给你提示一下～", "是个人~"],
-                    "这都猜不中？？？",
-                    ["好吧，看图吧。", "<img src='options/demo/imgs/test.png'>"]
+                    "不准说不😠"
                 ]
             }
         }
     },
-    { "msgs": ["我是在想打游戏", "我是在想你呢"], "msgInputSpeed": 80 },
-    { "msgs": ["看看这个视频"], "msgInputSpeed": 80 },
+    { "msgs": ["我就知道，傻老婆真贴心"], "msgInputSpeed": 100 },
+    { "msgs": ["对了，我忘记给你准备节日礼物了"], "msgInputSpeed": 100 },
+    { "msgs": ["你会不会不开心"], "msgInputSpeed": 180 },
+    { "msgs": ["emmm，其实是时间来不及了"], "msgInputSpeed": 180 },
+    { "msgs": ["没法准备比较浪漫的礼物，"], "msgInputSpeed": 180 },
     {
-        "msgs": ["<vlog src='options/demo/vlogs/test.mp4'/>"],
-        "triggerNextAction": { "type": "componentClose" }
+        "msgs": ["我写了封信给你，傻老婆要看看不？"],
+        "msgInputSpeed": 80,
+        "triggerNextAction": {
+            "type": "userInput",
+            "options": {
+                "resolveKeyTexts": ["好","看","可以","要"],
+                "rejectKeyTexts": [""],
+                "rejectHitTexts": [
+                    "傻老婆还是笨笨的"
+                ]
+            }
+        }
     },
     {
-        "msgs": ["测试结束，广告位招租"],
-        "msgInputSpeed": 80
-    }
+        "msgs": ["<letter src='options/swallow/letter.json'/>"],
+        "triggerNextAction": { "type": "componentClose" }
+    },
+    { "msgs": ["有没有感动呀"] , "msgInputSpeed": 100},
+    { "msgs": ["还有一件事，刚刚骗你的"] , "msgInputSpeed": 100},
+    { "msgs": ["礼物还是有的，回家再看看喽"], "msgInputSpeed": 100 },
+    { "msgs": ["不过现在最重要的事是想想晚上吃啥"], "msgInputSpeed": 100 },
+    { "msgs": ["晚上吃大餐，今天庆祝下，哈哈"]}
 ]
